@@ -15,6 +15,6 @@ Instructions:
 > pip install -r requirements.txt
 - Once you have required packages installed, you can run flask_api app to execute your commands using index.html.
 > python flask_api.py
-- Open index.html
+- Open **index.html**
 - You can now query any thing using web UI. Please also check terminal while you are clicking the buttons. There are some extra information have been printed out for you! 
 
