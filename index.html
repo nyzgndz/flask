@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <title>niog.tech</title>
+  <link rel="shortcut icon" href="https://niog.tech/wp-content/uploads/2018/01/site-icon.png">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js">
+  </script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
+  </script><![endif]>
+</head>
+
+<body>
+  <div class="container">
+    <img alt="Niog.Tech" class="img-circle" src="images/niog_tech_logo.jpg">
+    <h2>Welcome to Magic World!</h2>
+  </div>
+
+  <div class="container">
+    <button class="btn btn-info btn-lg" data-target="#readme-info" data-toggle="modal" type=
+    "button">README</button> <!-- Modal -->
+
+    <div class="modal fade" id="readme-info" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal" type="button">&times;</button>
+
+            <h4 class="modal-title">References</h4>
+          </div>
+
+          <div class="modal-body">
+            <p class="text-muted">Following examples are inspired from "Pattern" web mining module for the Python programming language.</p>
+            <p>Pattern has tools for data mining (Google, Twitter and Wikipedia API, a web crawler, a HTML DOM parser), natural language processing (part-of-speech taggers, n-gram search, sentiment analysis, WordNet), machine learning (vector space model, clustering, SVM), network analysis and canvas visualization. The module is free, well-document and bundled with 50+ examples and 350+ unit tests.</p>
+
+            <b>Sources:</b>
+            <p><a href="https://github.com/clips/pattern/tree/master/examples">GitHub Example Code Repository</a></p>
+
+            <p><a href="https://www.clips.uantwerpen.be/pattern">Pattern - Clips</a></p>
+            <p><a href="http://flask.pocoo.org/">Flask Documentation</a></p>
+
+            <span class="label label-primary">Google Search</span>
+            <p class="text-muted">If "Google Search" is selected, it returns the google search results in the output textarea for the given input in the input textarea.</p>
+
+            <span class="label label-primary">Twitter</span>
+            <p class="text-muted">If "Twitter" is selected, it returns the related tweets in the output textarea for the given input in the input textarea.</p>
+
+            <span class="label label-primary">Wikipedia</span>
+            <p class="text-muted">If "Wikipedia" is selected, it returns the Wikipedia search results in the output textarea for the given input in the input textarea.</p>
+
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div>
+
+      <div class="radio">
+        <label><input id="categories" name="optradio" type="radio"> Select Operation and Fill the Text Box Below.</label> 
+
+        <select class="form-control" id="category_comment">
+          <option>
+            Google Search
+          </option>
+
+          <option>
+            Twitter
+          </option>
+
+          <option>
+            Wikipedia
+          </option>
+        </select>
+
+        <textarea class="form-control" id="text_form" placeholder=
+          "INPUT" rows="2"></textarea>
+
+      </div>
+    </div>
+  
+  <button class="btn btn-default" id="submit_request">Submit</button> <img id=
+  "loading_indicator" src="images/loading.gif" style="display:none">
+
+      <div class="alert alert-success" id="submit_completed_alert">
+        <strong>Completed!</strong>
+      </div>
+      <p></p>
+      <textarea class="form-control" id="result_text_form" 
+     placeholder="OUTPUT" rows="20" cols="50"></textarea>
+
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script> <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js">
+  </script>
+  <script src="js/custom.js">
+  </script>
+</body>
+</html>
