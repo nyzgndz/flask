@@ -62,4 +62,4 @@ api.add_resource(MyFlask, '/niog')
 
 
 if __name__ == '__main__':
-    app.run(debug=True, threaded=True)
+    app.run(host='0.0.0.0', debug=True, threaded=True, port=5000)
