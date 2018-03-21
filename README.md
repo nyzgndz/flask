@@ -30,3 +30,22 @@ To sum up, if you want to change this for your own project, you just need to und
 - js/custom.js
 - flask_api.py
 - your_python_code.py (e.g. wikipedia_search.py)
+
+## README for Running flask_api.py on Docker
+
+1. Create docker image using ".Dockerfile" file. In order to do that, run the following command in the same directory in where all .Dockerfile is.
+	$ docker build -t flask-example -f ./.Dockerfile .
+	(NOTE: "flask-example" will be the docker repository name tag)
+
+2. In order to see the image, type "docker images". You need to see "flask-example" in the list that docker images command returns.
+
+3. Running on Docker
+	$ docker run -it -p 5000:5000 --name running-image flask-example
+	("running-image" will be the process name, which you can kill it with the following command later on.
+
+		$ docker rm -f running-image
+	)
+
+4. If you want to delete the image, type the following command
+
+	$ docker rmi -f flask-example
