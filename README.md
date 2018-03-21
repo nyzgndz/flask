@@ -44,8 +44,7 @@ To sum up, if you want to change this for your own project, you just need to und
 	("running-image" will be the process name, which you can kill it with the following command later on.
 
 		$ docker rm -f running-image
-	)
 
 4. If you want to delete the image, type the following command
 
-	$ docker rmi -f flask-example
+		$ docker rmi -f flask-example
